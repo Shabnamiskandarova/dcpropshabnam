@@ -10,7 +10,12 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-  
+  <style>
+    .form-control{
+        width: 90% !important;
+        margin: 0px 5% !important;
+    }
+  </style>
 <div class="mt-5 col-5 card text-center mx-auto">
       <br>
       <h5>Dear, customer. Please fill out the form below.</h5><br>
@@ -35,28 +40,26 @@
         </div>
  </div>        
           
-  <div class="row text-center">         
-    <div class="col-6">        
-      <label for="phone">Phone</label><input  class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-    </div>
-    <div class="col-6"> 
-      <label for="description">Description</label><textarea class="form-control" name="description"></textarea><br>
-    </div>
-  </div>
+  
   
   
  <div class="row text-center"> 
-   <div class="col-6"> 
-          <label for="priority">Priority</label><select  class="form-control" id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
-          <option value="Medium">Medium</option>
-          <option value="Low">Low</option>
-          </select><br>
-   </div>
-   <div class="col-6"> 
-          <label for="company">Company</label><input  class="form-control" id="company" maxlength="80" name="company" size="20" type="text" /><br>
-   </div>
+   
+    <div class="col-6">        
+      <label for="phone">Phone</label><input  class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    </div>
+     <div class="col-6"> 
+            <label for="priority">Priority</label><select  class="form-control" id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+            </select><br>
+     </div>
   </div>
-  
+  <div class="row text-center">
+    <div class="col-12"> 
+      <label for="description">Description</label><textarea class="form-control" name="description"></textarea><br>
+    </div>
+  </div>
   
   
 <input type="submit" name="submit" class="btn btn-primary mb-3>
