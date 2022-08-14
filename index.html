@@ -23,7 +23,7 @@
 <div class="mt-5 col-5 card text-center mx-auto">
       <br>
       <h5>Dear, customer. Please fill out the form below.</h5><br>
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" class="mx-auto">
 
 <input type=hidden name="orgid" value="00D8d000005zGCB">
 <input type=hidden name="retURL" value="http://">
@@ -37,10 +37,10 @@
 <!--  ----------------------------------------------------------------------  -->
 <div class="row text-center">
         <div class="col-6">
-            <label for="name">Contact Name</label><input class="form-control" id="name" maxlength="80" name="name" size="20" type="text" /><br>
+            <input class="form-control" placeholder="First name" id="name" maxlength="80" name="name" size="20" type="text" /><br>
         </div>
         <div class="col-6">
-          <label for="email">Email</label><input  class="form-control" id="email" maxlength="80" name="email" size="20" type="text" /><br>
+          <input  class="form-control" id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" /><br>
         </div>
  </div>        
           
@@ -50,18 +50,20 @@
  <div class="row text-center"> 
    
     <div class="col-6">        
-      <label for="phone">Phone</label><input  class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+      <input  class="form-control" id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" /><br>
     </div>
      <div class="col-6"> 
-            <label for="priority">Priority</label><select  class="form-control" id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
+            <select  class="form-control" id="priority" name="priority">
+              <option value="">--None--</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
             </select><br>
      </div>
   </div>
   <div class="row text-center">
     <div class="col-12"> 
-      <label for="description">Description</label><textarea class="form-control spec" name="description"></textarea><br>
+      <textarea class="form-control spec" name="description" placeholder="Description"></textarea><br>
     </div>
   </div>
   
